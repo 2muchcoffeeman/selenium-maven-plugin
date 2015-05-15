@@ -55,6 +55,7 @@ public class Transformer {
 	}
 
 	private final void read(MethodReader methodReader) throws Exception {
+		System.out.println("Hello world " + TEST_DIR);
 		File dir = new File(TEST_DIR);
 
 		FileFilter dirFilter = new FileFilter() {
@@ -63,6 +64,7 @@ public class Transformer {
 			}
 		};
 		for (File suiteDir : dir.listFiles(dirFilter)) {
+			System.out.println(suiteDir.getAbsoluteFile());
 			doTests(suiteDir, methodReader, null);
 		}
 	}

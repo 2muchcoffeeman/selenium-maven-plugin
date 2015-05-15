@@ -19,7 +19,7 @@
 		</developer>
 	</developers>
 	<properties>
-		<seleniumVersion>2.37.1</seleniumVersion>
+		<seleniumVersion>2.45.0</seleniumVersion>
 	</properties>
 	<licenses>
 		<license>
